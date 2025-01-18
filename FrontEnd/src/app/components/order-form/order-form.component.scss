@@ -1,0 +1,32 @@
+.orders {
+  &-header{
+    background: #4c9950;
+    color: #fff;
+    padding: .7rem 1rem;
+    
+    h4 {
+      margin: 5px;
+      font-weight: normal;
+    }
+  }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 0.7rem;
+  color: #000;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-mdc-dialog-content {
+  max-height: unset;
+ }
+
+.mat-dialog-content {
+  max-height: 100vh;
+}

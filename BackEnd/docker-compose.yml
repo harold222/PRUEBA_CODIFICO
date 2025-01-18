@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  pruebadb:
+    image: mcr.microsoft.com/mssql/server:2022-CU12-ubuntu-22.04
+
+  backend:
+    image: ${DOCKER_REGISTRY-}backend
+    build:
+      context: .
+      dockerfile: BackEnd/Dockerfile
+
+volumes:
+  sqlserver_prueba:
